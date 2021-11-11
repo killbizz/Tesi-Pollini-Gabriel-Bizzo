@@ -1,2 +1,3 @@
-# Tesi Pollini Gabriel Bizzo
- Tesi di laurea del corso accademico di I livello in Musica Elettronica di Gabriel Bizzo, Conservatorio Pollini di Padova, anno accademico 2020-2021 
+# Tesi Pollini Gabriel Bizzo 
+ Thesis for Bachelor's Degree in Electronic Music, academic year 2020-2021, Conservatory of Music C. Pollini, Italy. 
+ Paper wrote using LaTeX and Overleaf platform.
