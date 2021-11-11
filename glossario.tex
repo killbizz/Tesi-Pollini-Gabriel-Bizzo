@@ -9,6 +9,24 @@
 
 \newacronym[description={\glslink{umlg}{Unified Modeling Language}}]
     {uml}{UML}{Unified Modeling Language}
+    
+\newacronym[description={\glslink{dimg}{Distorsione di intermodulazione}}]
+    {dim}{DIM}{Distorsione di intermodulazione}
+    
+\newacronym[description={\glslink{dbfsg}{Decibel Full Scale}}]
+    {dbfs}{dBFS}{Decibel Full Scale}
+    
+\newacronym[description={\glslink{iirg}{Infinite Impulse Response}}]
+    {iir}{IIR}{Infinite Impulse Response}
+    
+\newacronym[description={\glslink{lfog}{Low Frequency Oscillator}}]
+    {lfo}{LFO}{Low Frequency Oscillator}
+    
+\newacronym[description={\glslink{dawg}{Digital Audio Workstation}}]
+    {daw}{DAW}{Digital Audio Workstation}
+    
+\newacronym[description={\glslink{fftg}{Fast Fourier Transform}}]
+    {fft}{FFT}{Fast Fourier Transform}
 
 %**************************************************************
 % Glossario
@@ -29,4 +47,132 @@
     text=UML,
     sort=uml,
     description={in ingegneria del software \emph{UML, Unified Modeling Language} (ing. linguaggio di modellazione unificato) è un linguaggio di modellazione e specifica basato sul paradigma object-oriented. L'\emph{UML} svolge un'importantissima funzione di ``lingua franca'' nella comunità della progettazione e programmazione a oggetti. Gran parte della letteratura di settore usa tale linguaggio per descrivere soluzioni analitiche e progettuali in modo sintetico e comprensibile a un vasto pubblico}
+}
+
+\newglossaryentry{dimg}
+{
+    name=\glslink{dim}{DIM},
+    text=DIM,
+    sort=dim,
+    description={\emph{La distorsione di intermodulazione} consiste nella modulazione di ampiezza di segnali contenenti due o più frequenze diverse, causata principalmente dalla non linearità di un sistema. L'intermodulazione tra i componenti di frequenza forma componenti aggiuntivi a frequenze che non sono solo alle frequenze armoniche (multipli interi) di entrambi, come la distorsione armonica, ma anche alle frequenze somma e differenza delle frequenze originali e alle somme e differenze di multipli di quelle frequenze}
+}
+
+\newglossaryentry{dbfsg}
+{
+    name=\glslink{dbfs}{dBFS},
+    text=dBFS,
+    sort=dbfs,
+    description={I \emph{Decibel Full Scale} (dBFS o dB FS) sono un'unità di misura per i livelli di ampiezza nei sistemi digitali che hanno un livello di picco massimo definito. Il livello di 0dBFS è assegnato al massimo livello digitale possibile. Ad esempio, un segnale che raggiunge il 50\% del livello massimo ha un livello di -6dBFS, che è 6dB al di sotto del massimo della scala}
+}
+
+\newglossaryentry{pre-enfasig}
+{
+    name=Pre-enfasi,
+    text=pre-enfasi,
+    sort=preenfasi,
+    description={La \textit{Pre-Enfasi} di un segnale audio consiste in un processo in cui è previsto l'utilizzo di due shelf filter. Entrambi i filtri possono essere o high shelf o low shelf e sono posti uno prima e uno dopo un ulteriore blocco di elaborazione audio (spesso consiste in un effetto di distorsione). L'operazione di pre-enfasi prevede l'applicazione di un'attenuazione o enfatizazione della frequenza del primo filtro, in modo tale da effettuare l'operazione inversa nel secondo filtro}
+}
+
+\newglossaryentry{opensourceg}
+{
+    name=Open-source,
+    text=open-source,
+    sort=opensource,
+    description={Con \textit{open-source} (in italiano sorgente aperto), in informatica, si indica un tipo di software o il suo modello di sviluppo o distribuzione. Un software open source è reso tale per mezzo di una licenza attraverso cui i detentori dei diritti favoriscono la modifica, lo studio, l’utilizzo e la redistribuzione del codice sorgente}
+}
+
+\newglossaryentry{iirg}
+{
+    name=\glslink{iir}{IIR},
+    text=IIR,
+    sort=iir,
+    description={In teoria dei segnali, un sistema dinamico \textit{Infinite Impulse Response} (in italiano risposta all'impulso infinita e spesso abbreviato in IIR) è un sistema dinamico causale la cui risposta impulsiva non è nulla al tendere all'infinito del tempo. I sistemi la cui risposta si annulla ad un tempo finito sono invece detti finite impulse response (FIR). Sebbene la definizione si adatti a sistemi tempo-continui, solitamente si ha a che fare con sistemi numerici, spesso i filtri digitali}
+}
+
+\newglossaryentry{lfog}
+{
+    name=\glslink{lfo}{LFO},
+    text=LFO,
+    sort=lfo,
+    description={L'\textit{oscillatore a bassa frequenza} o LFO (sigla di Low Frequency Oscillator) è un generatore di forme d'onda a frequenza infrasonica, con funzione di modulatore di effetti, negli strumenti musicali elettronici. Per potersi considerare tale deve stare al di sotto di 20 Hz proprio perché l'orecchio umano può udire i suoni nell'intervallo dai 20 Hz ai 20 kHz e serve a modulare altri segnali}
+}
+
+\newglossaryentry{sidechaing}
+{
+    name=Sidechain,
+    text=sidechain,
+    sort=sidechain,
+    description={Il \textit{sidechain} è una tecnica di compressione che, applicato a una traccia, attiva la compressione di un processore di dinamica a partire da un altro segnale audio esterno a tale traccia. Di norma i compressori vengono cablati in insert e il loro funzionamento dipende dal materiale audio che passa per quella data traccia. Se a un compressore posto in insert viene attivato il controllo sidechain, questo smetterà di funzionare, fin quando ad esso verrà indicato quale segnale dovrà fare da trigger (da azionatore)}
+}
+
+\newglossaryentry{dawg}
+{
+    name=\glslink{daw}{DAW},
+    text=DAW,
+    sort=daw,
+    description={Una \textit{Workstation Audio Digitale}, a cui ci si riferisce spesso anche con il nome inglese di Digital Audio Workstation o con il suo acronimo DAW, è un sistema elettronico progettato per la registrazione, il montaggio e la riproduzione dell'audio digitale}
+}
+
+\newglossaryentry{powerchordg}
+{
+    name=Power Chord,
+    text=power chord,
+    sort=powerchord,
+    description={Un \textit{power chord} (in inglese, letteralmente, "accordo potente"), anche noto come accordo di quinta o quinta vuota, è un bicordo i cui suoni vengono di solito eseguiti simultaneamente}
+}
+
+\newglossaryentry{pluging}
+{
+    name=Plugin,
+    text=plugin,
+    sort=plugin,
+    description={Un \textit{plugin} in campo informatico corrisponde ad un programma non autonomo che interagisce con un altro programma per ampliarne o estenderne le funzionalità originarie (ad es. un plugin per un software di grafica permette l'utilizzo di nuove funzioni non presenti nel software principale): possono essere utilizzati non solo su software, ma anche su qualunque cosa che possa essere visitata da chiunque, quindi pubblica (ad es. i videogiochi online)}
+}
+
+\newglossaryentry{ditheringg}
+{
+    name=Dithering,
+    text=dithering,
+    sort=dithering,
+    description={Il \textit{dithering}, nella elaborazione numerica di segnali, è una forma di rumore con una opportuna distribuzione, che viene volontariamente aggiunto ai campioni con l'obiettivo di minimizzare la distorsione introdotta dal troncamento nel caso in cui si riquantizzino i campioni stessi. Il dithering viene usato abitualmente nell'elaborazione di segnali video e audio campionati e quantizzati}
+}
+
+\newglossaryentry{mockupg}
+{
+    name=Mockup,
+    text=mockup,
+    sort=mockup,
+    description={Un \textit{mockup}, o mock-up, è una realizzazione a scopo illustrativo o meramente espositivo di un oggetto o un sistema, senza le complete funzioni dell'originale; un mockup può rappresentare la totalità o solo una parte dell'originale di riferimento (già esistente o in fase di progetto), essere in scala reale oppure variata}
+}
+
+\newglossaryentry{fftg}
+{
+    name=\glslink{fft}{FFT},
+    text=FFT,
+    sort=fft,
+    description={In matematica, la \textit{trasformata di Fourier veloce}, spesso abbreviata con FFT (dall'inglese Fast Fourier Transform), è un algoritmo ottimizzato per calcolare la trasformata discreta di Fourier (DFT) o la sua inversa. La FFT è utilizzata in una grande varietà di applicazioni, dall'elaborazione di segnali digitali alla soluzione di equazioni differenziali alle derivate parziali agli algoritmi per moltiplicare numeri interi di grandi dimensioni grazie al basso costo computazionale}
+}
+
+\newglossaryentry{polimorfismog}
+{
+    name=Polimorfismo,
+    text=polimorfismo,
+    sort=polimorfismo,
+    description={In informatica, il termine \textit{polimorfismo} viene usato in senso generico per riferirsi a espressioni che possono rappresentare valori di diversi tipi (dette espressioni polimorfiche). In un linguaggio non tipizzato, tutte le espressioni sono intrinsecamente polimorfiche. Il termine nel contesto della programmazione orientata agli oggetti si riferisce al fatto che un'espressione il cui tipo sia descritto da una classe A può assumere valori di un qualunque tipo descritto da una classe B sottoclasse di A (polimorfismo per inclusione)}
+}
+
+\newglossaryentry{dspg}
+{
+    name=DSP,
+    text=DSP,
+    sort=dsp,
+    description={Digital Signal Processing}
+}
+
+\newglossaryentry{projucerg}
+{
+    name=Projucer,
+    text=Projucer,
+    sort=projucer,
+    description={\textit{Projucer} è uno strumento per la creazione e la gestione di progetti JUCE. Una volta specificati i file e le impostazioni per un progetto JUCE, Projucer genera automaticamente una raccolta di file di progetto di terze parti per consentire la compilazione nativa del progetto su ciascuna piattaforma di destinazione. Attualmente può generare progetti Xcode, Visual Studio, Linux Makefile, CodeBlocks e build Android Ant. Oltre a fornire un modo per gestire i file e le impostazioni di un progetto, ha anche un editor di codice, un editor GUI integrato, procedure guidate per la creazione di nuovi progetti/file e un motore di codifica live utile per la progettazione dell'interfaccia utente}
 }

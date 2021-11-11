@@ -3,82 +3,56 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Analisi dei requisiti}
-\label{cap:analisi-requisiti}
+\chapter{Licenze software}
+\label{cap:licenze-software}
 %**************************************************************
 
-\intro{Breve introduzione al capitolo}\\
+\intro{Il capitolo in questione effettua una panoramica sulle licenze per il software libero, analizzando quelle utilizzate dalle librerie terze necessarie all'implementazione del software Biztortion e quindi quella utilizzata per il rilascio del suddetto software}\\
 
-\section{Casi d'uso}
+%**************************************************************
+\section{Software libero}
 
-Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
-I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
-Essendo il progetto finalizzato alla creazione di un tool per l'automazione di un processo, le interazioni da parte dell'utilizzatore devono essere ovviamente ridotte allo stretto necessario. Per questo motivo i diagrammi d'uso risultano semplici e in numero ridotto.
-
-\begin{figure}[!h] 
-    \centering 
-    \includegraphics[width=0.9\columnwidth]{usecase/scenario-principale} 
-    \caption{Use Case - UC0: Scenario principale}
-\end{figure}
-
-\begin{usecase}{0}{Scenario principale}
-\usecaseactors{Sviluppatore applicativi}
-\usecasepre{Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE}
-\usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test}
-\usecasepost{Il sistema è pronto per permettere una nuova interazione}
-\label{uc:scenario-principale}
-\end{usecase}
-
-\section{Tracciamento dei requisiti}
-
-Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.\\
-Sono stati individuati diversi tipi di requisiti e si è quindi fatto utilizzo di un codice identificativo per distinguerli.\\
-Il codice dei requisiti è così strutturato R(F/Q/V)(N/D/O) dove:
+Il software \hyperref[cap:biztortion]{Biztortion}, corrispondente a parte del lavoro effettuato per la tesi di laurea, è stato sviluppato con l'obiettivo di approfondire il fenomeno della distorsione del segnale audio e di aumentare il mio bagaglio di esperienza da programmatore. Essendo inoltre la tesi di laurea un lavoro di studio e ricerca, risuta logicamente ed eticamente corretto il rilascio e la diffusione del software in questione come \textit{software libero}. \\ \\
+Il “Software libero”\footcite{site:software-libero} rispetta la libertà degli utenti e la comunità. In breve, significa che gli utenti hanno la libertà di eseguire, copiare, distribuire, studiare, modificare e migliorare il software. Tramite queste libertà gli utenti (individualmente o nel loro complesso) controllano il programma e le sue funzioni. Quando non sono gli utenti a controllare il programma, allora il programma (che in quel caso è denominato "non libero" o "proprietario") controlla gli utenti. \\
+Un programma è software libero se gli utenti del programma godono delle quattro libertà fondamentali:
 \begin{enumerate}
-	\item[R =] requisito
-    \item[F =] funzionale
-    \item[Q =] qualitativo
-    \item[V =] di vincolo
-    \item[N =] obbligatorio (necessario)
-    \item[D =] desiderabile
-    \item[Z =] opzionale
+    \item Libertà di \textbf{eseguire} il programma come si desidera, per qualsiasi scopo;
+    \item Libertà di \textbf{studiare} come funziona il programma e di \textbf{modificarlo} in modo da adattarlo alle proprie necessità. L'accesso al codice sorgente ne è un prerequisito;
+    \item Libertà di \textbf{ridistribuire} copie in modo da aiutare gli altri;
+    \item Libertà di \textbf{migliorare} il programma e distribuirne pubblicamente i miglioramenti apportati (e le versioni modificate in genere), in modo tale che tutta la comunità ne tragga beneficio. Anche qui l'accesso al codice sorgente ne è un prerequisito.
 \end{enumerate}
-Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi} e \ref{tab:requisiti-vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
+E' necessario inoltre evidenziare il fatto che software libero non vuol dire non commerciale. Al contrario, con un programma libero deve essere possibile anche l'\textbf{uso commerciale}, lo sviluppo commerciale, e la distribuzione commerciale. Questa politica è di importanza fondamentale, infatti senza questa il software libero non potrebbe raggiungere i suoi obiettivi. \\
+Infine certi tipi di regole sul come distribuire il software libero sono accettabili quando non entrano in conflitto con le libertà principali. Per esempio, il \textbf{copyleft}, noto anche impropriamente come "permesso d'autore", è in poche parole la regola per cui, quando il programma è ridistribuito, non è possibile aggiungere restrizioni per negare ad altre persone le libertà principali. Questa regola non entra in conflitto con le libertà principali, anzi le protegge.
 
-\newpage
+%**************************************************************
+\section{Licenze per il software libero}
+Una licenza di software libero è una licenza libera, un testo legale caratterizzato da un aspetto contrattuale o para-contrattuale, che si applica ad un software per garantirne la libertà d'utilizzo, di studio, di modifica e di condivisione, ovvero per renderlo software libero. \\
+La nascita del concetto di licenza applicata ad un software per renderlo libero combacia in parte con la nascita di \textit{GNU}, il primo sistema operativo completamente libero ideato da Richard Stallman nel 1983. Tutt'oggi il progetto GNU e la Free Software Foundation patrocinano attivamente il software distribuito sotto licenze libere e, in generale, la libertà digitale degli utenti. \\ \\
+Di seguito vengono descritte alcune tra le licenze per il software libero utilizzate dalle librerie esterne necessarie allo sviluppo del software \textit{Biztortion}.
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisti funzionali}
-\label{tab:requisiti-funzionali}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RFN-1     & L'interfaccia permette di configurare il tipo di sonde del test & UC1 \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{GPL}
+\label{sec:gpl}
+La \textit{GNU General Public License}\footcite{site:gpl} (comunemente indicata con l'acronimo GNU GPL o semplicemente GPL) è una licenza \textit{fortemente copyleft} per software libero, originariamente stesa nel 1989 da Richard Stallman per patrocinare i programmi creati per il sistema operativo GNU. \\
+La Free Software Foundation (FSF) detiene i diritti di copyright sul testo della GNU GPL, ma non detiene alcun diritto sul software da essa coperto. La GNU GPL non è liberamente modificabile: solo la copia e la distribuzione sono permesse. Per questo motivo solo la FSF può pubblicare nuove revisioni o versioni, l'ultima delle quali fu pubblicata il 29 giugno del 2007 sotto il nome di \textbf{GNU GPL v3}.
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti qualitativi}
-\label{tab:requisiti-qualitativi}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RQD-1    & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{MIT}
+La \textit{Licenza MIT}\footcite{site:mit} è una licenza di software libero creata dal Massachusetts Institute of Technology (MIT). 
+La licenza in questione è \textit{senza copyleft} e risulta molto permissiva, in quanto a differenza delle licenze software copyleft, la licenza MIT consente anche il riutilizzo all'interno di software proprietario, a condizione che tutte le copie del software o delle sue parti sostanziali includano una copia dei termini della licenza MIT e anche un avviso di copyright. La licenza MIT È anche una licenza \textit{GPL-compatibile}, cioè la GPL permette di combinare e ridistribuire tale software con altro che usa la licenza MIT.
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti di vincolo}
-\label{tab:requisiti-vincolo}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RVO-1    & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{BSD}
+Le \textit{licenze BSD} sono una famiglia di licenze permissive, \textit{senza copyleft}, per software libero. Il loro nome deriva dal fatto che la licenza BSD originale (detta anche licenza BSD con 4 clausole) fu usata originariamente per distribuire il sistema operativo Unix Berkeley Software Distribution (BSD), una revisione libera di UNIX sviluppata presso l'Università di Berkeley. \\
+La versione originale è stata successivamente rivista e le sue discendenti sono più propriamente definite licenze BSD modificate. Due varianti della licenza, la Nuova Licenza BSD (o Licenza BSD Modificata)\footcite{site:bsd} e la Licenza semplificata BSD (o FreeBSD), sono state verificate come licenze di software libero \textit{GPL-compatible} dalla Free Software Foundation.
+
+%**************************************************************
+\section{Librerie utilizzate}
+Per la realizzazione del software \textit{Biztortion} sono state utilizzate delle librerie sviluppate da terzi in modo da semplificare lo sviluppo di alcuni componenti. Di seguito vengono elencate e descritte tutte le librerie in questione, le quali utilizzano tutte delle licenze per software libero che sono \textit{GPL-compatible} rendendo più semplice la scelta della licenza di rilascio e distribuzione del software sopraccitato:
+\begin{itemize}
+    \item \textbf{JUCE}: il framework C++ in questione, necessario per la creazione dell'applicazione audio, utilizza termini di licenza a vari livelli, con termini diversi per ogni licenza disponibile: \textit{JUCE Personal} (per sviluppatori o start-up con entrate inferiori al limite di entrate di 50K USD; gratuito), \textit{JUCE Indie} (per le piccole imprese con limite di entrate inferiore a 500K USD; \$ 40/mese), \textit{JUCE Pro} (nessun limite di entrate; \$ 130/mese) e \textit{JUCE Educational} (nessun limite di entrate; gratuito per istituzioni educative in buona fede). Risulta infine possibile rilasciare un'applicazione sviluppata con JUCE sotto la \textbf{GNU GPLv.3}, rendendola software libero in modo che ne possa beneficiare tutta la comunità;
+    \item \textbf{dRowAudio}: consiste in un modulo JUCE di terze parti progettato per lo sviluppo rapido di applicazioni audio; la libreria, sviluppata da \textit{David Rowland}, contiene diverse classi per l'elaborazione audio e vari elementi utili per la creazione dell'interfaccia grafica. Il modulo in questione è distribuito secondo i termini della \textbf{Licenza MIT} per il software libero;
+    \item \textbf{ff\_meters}: consiste in un modulo JUCE di terze parti che offre un componente facile da usare per visualizzare una lettura di livello del segnale utilizzando un \textit{juce::AudioBuffer} in ingresso. La libreria, sviluppata da \textit{Daniel Walz} (Foleys Finest Audio Ltd.), deve essere utilizzata con il framework JUCE. Il modulo in questione è distribuito secondo i termini della \textbf{Licenza BSD a 3 clausole} (conosciuta anche come "Nuova" o "Modificata").
+\end{itemize}
+
+%**************************************************************
+\section{Software Biztortion}
+Il software \textit{Biztortion}, poiché è stato sviluppato con le librerie citate nella sezione precedente che utilizzano licenze per il software libero \textit{GPL-compatible}, viene distribuito secondo i termini stabiliti dalla licenza \hyperref[sec:gpl]{GNU GPLv.3}, ovvero la più recente delle GPL. In sostanza la licenza in questione, oltre ad affermare le quattro libertà fondamentali del software libero, garantisce che tutte le versioni migliorate a partire da quella originale che saranno distribuite dovranno essere libere a loro volta. \\ \\
+Il software in questione viene rilasciato, insieme al presente documento per la discussione della tesi di laurea, alla versione \textit{1.0} ed è possibile trovare tutti i file corrispondenti al prodotto software in \href{https://github.com/killbizz/Biztortion}{questo repository remoto}.

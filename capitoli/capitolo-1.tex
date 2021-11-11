@@ -5,49 +5,62 @@
 %**************************************************************
 \chapter{Introduzione}
 \label{cap:introduzione}
-%**************************************************************
-
-Introduzione al contesto applicativo.\\
-
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
-
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
-
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
 
 %**************************************************************
-\section{L'azienda}
+\section{Motivazione ed obiettivi}
 
-Descrizione dell'azienda.
+La \textit{distorsione} del segnale audio in ambito creativo, dettata da una continua ricerca di sonorità particolari e ricche di armoniche, è per me sempre stata fonte inesauribile di curiosità e divertimento. Questa continua sperimentazione sonora mi ha portato negli anni ad appassionarmi molto alla musica elettronica dance e, in particolare, al sottogenere denominato \textit{Hardstyle}, tipico del nord Europa e dalla sonorità molto aggressiva e distorta. Un ulteriore fattore, fondamentale per la mia scelta di approfondire la distorsione come argomento per la tesi di laurea, è sicuramente la passione per lo \textit{sviluppo software}, alimentata dal mio percorso universitario nel corso di laurea in scienze informatiche da poco conclusosi. \\
+Dopo una lunga riflessione, accomunando le mie passioni e le mie competenze apprese nel mio percorso di studi, ho deciso di approfondire la tematica della distorsione attraverso l'implementazione di un processore di segnale audio digitale, in modo da poter alimentare la mia ambizione di diventare uno sviluppatore di software per le applicazioni multimediali. \\
+Oltre a dire quanto per me questo percorso di ricerca sia risultato incredibilmente appagante, vorrei infine manifestare la mia contentezza nel poter finalmente contribuire nelle community di produttori di musica elettronica e di sviluppatori software per l'audio offrendo diversi algoritmi di distorsione in un unico strumento \gls{opensourceg}.
 
 %**************************************************************
-\section{L'idea}
+\section{Strumenti utilizzati}
 
-Introduzione all'idea dello stage.
+\subsection*{Microsoft Visual Studio}
+\textit{Microsoft Visual Studio} è un ambiente di sviluppo integrato creato e manutenuto da Microsoft. Lo strumento in questione è multi-linguaggio e attualmente supporta la creazione di progetti per varie piattaforme, tra cui anche Mobile e Console. È possibile creare ed utilizzare estensioni e componenti aggiuntivi.
+
+\subsection*{Xcode}
+\textit{Xcode} è un ambiente di sviluppo integrato completamente sviluppato e mantenuto da Apple, contenente una suite di strumenti utili allo sviluppo di software per i sistemi macOS, iOS, iPadOS, watchOS e tvOS. 
+
+\subsection*{Git}
+\textit{Git} è uno strumento per il controllo di versione distribuito utilizzabile da interfaccia a riga di comando. E' possibile utilizzare il software in questione per collaborare con più membri di un team e per controllare la versione del codice prodotto così da poter ritornare ad una versione stabile in caso di problemi.
+
+\subsection*{Adobe Illustrator / Photoshop}
+I due programmi in questione sono due software proprietari prodotti da Adobe e sono specializzati nell'elaborazione di immagini digitali. Questi strumenti sono stati utilizzati per la realizzazione di alcune immagini utilizzate nell'interfaccia grafica del software per rendere più piacevole l'esperienza dell'utente.
+
+\subsection*{Draw.io}
+\textit{Draw.io} è una piattaforma online gratuita per la creazione di varie tipologie di diagrammi, esportabili come file in diversi formati (tra i quali PDF o JPEG). Tra le diverse possibilità offerte  dal software sono presenti i diagrammi di flusso, di processo, \gls{umlg}, entità-relazione e di rete. Questa piattaforma è stata utilizzata per creare i diagrammi dei casi d'uso, utilizzati per l'analisi dei requisiti illustrata nel capitolo 3.1.
+
+\subsection*{Balsamiq Mockups}
+\textit{Balsamiq Mockups} è uno strumento di progettazione dell'interfaccia utente per la creazione di \gls{mockupg} (ovvero dei prototipi a bassa fedeltà). E' possibile utilizzare questo strumento per generare schizzi digitali di varie idee di prodotto per facilitare la discussione e la comprensione prima che venga scritto qualsiasi codice.
+
+\subsection*{Overleaf}
+\textit{Overleaf} è un editor LaTeX collaborativo basato su cloud e viene utilizzato per scrivere, modificare e pubblicare varie tipologie di documenti. Questo software è stato utilizzato per la scrittura del presente documento.
+
+\subsection*{Inno Setup / Packages}
+I due programmi in questione sono dei sistemi di installazione guidati da script. Questi software sono stati utilizzati per la creazione dei pacchetti di installazione guidata rispettivamente per Windows e MacOS.
 
 %**************************************************************
 \section{Organizzazione del testo}
 
+\subsection{Struttura del documento}
+Il documento, suddiviso in cinque capitoli, è strutturato nella seguente modalità:
 \begin{description}
-    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
+    \item[{\hyperref[cap:introduzione]{Il primo capitolo}}] effettua una breve introduzione al lavoro e agli strumenti utilizzati per la realizzazione della tesi di laurea.
+
+    \item[{\hyperref[cap:distorsione]{Il secondo capitolo}}] approfondisce il fenomeno della distorsione del segnale audio descrivendo i principi teorici e le diverse tipologie di algoritmi esistenti, oltre ad analizzare alcune implementazioni digitali presenti sul mercato.
     
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce ...
+    \item[{\hyperref[cap:biztortion]{Il terzo capitolo}}] descrive le diverse fasi che hanno permesso la realizzazione del processore di segnale audio digitale denominato Biztortion.
     
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce ...
+    \item[{\hyperref[cap:licenze-software]{Il quarto capitolo}}] effettua una panoramica sulle licenze software, analizzando quelle utilizzate dalle librerie terze necessarie all'implementazione del software Biztortion e quindi quella utilizzata per il rilascio del suddetto software.
     
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
+    \item[{\hyperref[cap:conclusioni]{Il quinto capitolo}}], infine, contiene un'analisi del lavoro svolto e le conclusioni tratte.
 \end{description}
 
+\subsection{Convenzioni tipografiche}
 Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
 \begin{itemize}
 	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
+	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la nomenclatura "\emph{parola(abbreviazione)}", mentre per ogni successiva occorrenza verrà utilizzata solamente l'abbreviazione di tale termine;
 	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
 \end{itemize}

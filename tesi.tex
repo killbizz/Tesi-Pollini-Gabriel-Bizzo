@@ -29,13 +29,24 @@
   \Keywords{keyword1\sep keyword2\sep keyword3}
 \end{filecontents*}
 
-\documentclass[10pt,                    % corpo del font principale
+\documentclass[12pt,                    % corpo del font principale
                a4paper,                 % carta A4
                twoside,                 % impagina per fronte-retro
                openright,               % inizio capitoli a destra
                english,                 
                italian,                 
                ]{book}    
+
+\linespread{1.5} 
+\usepackage[a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+%\documentclass[12pt]{article}
+%\usepackage[a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+%\geometry{a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm}
+%\linespread{1.5}
+
+%\documentclass[12pt]{article}
+%\usepackage[a4paper, margin=2cm]{geometry}
+%\linespread{1.5}
 
 %**************************************************************
 % Importazione package
@@ -125,7 +136,7 @@
 \frontmatter
 \input{inizio-fine/frontespizio}
 \input{inizio-fine/colophon}
-\input{inizio-fine/dedica}
+%\input{inizio-fine/dedica}
 \input{inizio-fine/sommario}
 \input{inizio-fine/ringraziamenti}
 \input{inizio-fine/indici}
@@ -136,14 +147,12 @@
 %**************************************************************
 \mainmatter
 \input{capitoli/capitolo-1}             % Introduzione
-\input{capitoli/capitolo-2}             % Processi
-\input{capitoli/capitolo-3}             % Kick-Off
-\input{capitoli/capitolo-4}             % Concept Preview
-\input{capitoli/capitolo-5}             % Product Prototype
-\input{capitoli/capitolo-6}             % Product Design Freeze e SOP
-\input{capitoli/capitolo-7}             % Conclusioni
-\appendix                               
-\input{capitoli/capitolo-A}             % Appendice A
+\input{capitoli/capitolo-2}             % Distorsione
+\input{capitoli/capitolo-3}             % Biztortion
+\input{capitoli/capitolo-4}             % Licenze
+\input{capitoli/capitolo-5}             % Conclusioni
+%\appendix                               
+%\input{capitoli/capitolo-A}             % Appendice A
 
 %**************************************************************
 % Materiale finale
